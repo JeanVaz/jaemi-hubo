@@ -4394,14 +4394,14 @@ void CGesture::OnGestureBothArmPointJean()
 {
 	int		JointIndex;
 	int		t;
-	int		T;
+	int		T= 600;
 	
 	int		MotionNo;
 	MotionNo = 47;
 	
 	if(theApp.m_pSharedMemory->MotionFlag[MotionNo] == FALSE)
 	{
-		GetDlgItem(IDC_GESTURE_RAISE_RIGHT_ARM)->EnableWindow(FALSE);
+		GetDlgItem(IDC_GESTURE_BOTH_ARM_POINT_JEAN)->EnableWindow(FALSE);
 		/*
 		switch(theApp.m_pSharedMemory->JaemiSaysMotionSpeed)
 		{
@@ -4430,8 +4430,11 @@ void CGesture::OnGestureBothArmPointJean()
 		
 		theApp.m_pSharedMemory->MotionLength[MotionNo] = T;
 		*/
+		theApp.m_pSharedMemory->MotionLength[MotionNo] = T;
 		theApp.m_pSharedMemory->MotionFlagALL = 1;
+		
 		theApp.m_pSharedMemory->MotionFlag[MotionNo] = TRUE;
+		
 		//theApp.m_pSharedMemory->PROFTime[11] = 0;
 		
 		theApp.m_pSharedMemory->PROFTime[19] = 0;
