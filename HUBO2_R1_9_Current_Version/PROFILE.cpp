@@ -8783,10 +8783,10 @@ void Motion_OnGestureBothArmPointJean(int T, char MotionStop,unsigned int Motion
 			UpperMovement[RSY] = res[RSY];//(float)0.;// + result[11];	// R-Shoulder Yaw
 			UpperMovement[REB] = res[REB];//(float)0.;// + result[12];	// R-Elbow	Pitch
 			
-			UpperMovement[LSP] = res[LSP].;	// L-Shoulder Pitch
-			UpperMovement[LSR] = res[LSR].; //;res[1];// + result[ 4];	// L-Shoulder Roll
-			UpperMovement[LSY] = res[LSY].;// + result[ 5];	// L-Shoulder Yaw
-			UpperMovement[LEB] = res[LEB].;// + result[ 6];	// L-Elbow	Pitch		
+			UpperMovement[LSP] = res[LSP];	// L-Shoulder Pitch
+			UpperMovement[LSR] = res[LSR]; //;res[1];// + result[ 4];	// L-Shoulder Roll
+			UpperMovement[LSY] = res[LSY];// + result[ 5];	// L-Shoulder Yaw
+			UpperMovement[LEB] = res[LEB];// + result[ 6];	// L-Elbow	Pitch		
 			
 			UpperMovement[WST] = (float)0.;// + result[ 0];	// Trunk
 			

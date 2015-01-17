@@ -2364,6 +2364,7 @@ void CGesture::OnButtonMotionActivation()
 	GetDlgItem(IDC_GESTURE_SPEED_SLOW)->EnableWindow(TRUE);
 	GetDlgItem(IDC_GESTURE_SPEED_MEDIUM)->EnableWindow(TRUE);
 	GetDlgItem(IDC_GESTURE_SPEED_FAST)->EnableWindow(TRUE);
+	GetDlgItem(IDC_GESTURE_BOTH_ARM_POINT_JEAN)->EnableWindow(TRUE);
 }
 
 void CGesture::OnCheckRightHand() 
